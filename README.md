@@ -33,7 +33,8 @@ The network consists of:
 
 ### Topology
 
-```text
+![Enterprise OSPF Network Topology](Documentation/Network-Topology.png)
+
                          ISP
                           |
                          R4
