@@ -1,0 +1,50 @@
+OSPF ROUTE VERIFICATION
+=======================
+
+Device: R1
+
+Command:
+show ip route
+
+Verified OSPF routes include:
+
+192.168.10.0/24
+Learned via OSPF from R2
+Next hop: 10.0.12.2
+
+192.168.20.0/24
+Learned via OSPF from R3
+Next hop: 10.0.13.2
+
+192.168.30.0/24
+Learned via OSPF from R3
+Next hop: 10.0.13.2
+
+
+DEFAULT ROUTE
+=============
+
+0.0.0.0/0
+Learned via OSPF from R4
+Next hop: 10.0.14.2
+
+Source:
+R4 — Router ID 4.4.4.4
+
+
+ROUTING SUMMARY
+===============
+
+R1 successfully learns the remote LAN networks through OSPF.
+
+R2 advertises Area 10:
+192.168.10.0/24
+
+R3 advertises Area 20:
+192.168.20.0/24
+192.168.30.0/24
+
+R4 advertises the default route:
+0.0.0.0/0
+
+This confirms successful inter-area routing and default-route propagation.

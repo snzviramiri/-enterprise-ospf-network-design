@@ -1,0 +1,98 @@
+CONNECTIVITY TESTS
+==================
+
+PROJECT: Enterprise OSPF Network Design & Implementation
+
+
+1. LAN GATEWAY TESTS
+--------------------
+
+PC1 → 192.168.10.1
+Result: SUCCESSFUL
+
+PC3 → 192.168.20.1
+Result: SUCCESSFUL
+
+PC5 → 192.168.30.1
+Result: SUCCESSFUL
+
+
+2. INTER-LAN CONNECTIVITY
+-------------------------
+
+PC1 → PC3
+Result: SUCCESSFUL
+
+PC1 → PC5
+Result: SUCCESSFUL
+
+PC3 → PC1
+Result: SUCCESSFUL
+
+PC5 → PC1
+Result: SUCCESSFUL
+
+
+3. ROUTER CONNECTIVITY
+----------------------
+
+R2 → R1
+Result: SUCCESSFUL
+
+R3 → R1
+Result: SUCCESSFUL
+
+R4 → R1
+Result: SUCCESSFUL
+
+
+4. EXTERNAL CONNECTIVITY
+------------------------
+
+R4 → ISP
+Result: SUCCESSFUL
+
+R4 → PC1
+Result: SUCCESSFUL
+
+PC1 → ISP
+Result: SUCCESSFUL
+
+PC3 → ISP
+Result: SUCCESSFUL
+
+PC5 → ISP
+Result: SUCCESSFUL
+
+
+5. OSPF VERIFICATION
+--------------------
+
+R1 OSPF Neighbours:
+R2 — FULL
+R3 — FULL
+R4 — FULL
+
+OSPF inter-area routing:
+SUCCESSFUL
+
+Default route propagation:
+SUCCESSFUL
+
+External connectivity:
+SUCCESSFUL
+
+
+FINAL RESULT
+============
+
+The Enterprise OSPF network successfully provides:
+
+- Area 0 backbone connectivity
+- Area 10 LAN connectivity
+- Area 20 LAN connectivity
+- Inter-area routing
+- OSPF neighbour formation
+- Default-route propagation
+- Enterprise-to-ISP connectivity
+- End-to-end connectivity between LANs

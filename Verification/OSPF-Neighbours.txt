@@ -1,0 +1,26 @@
+OSPF NEIGHBOUR VERIFICATION
+============================
+
+Device: R1
+Command: show ip ospf neighbor
+
+Expected/Verified Result:
+
+R1 has three OSPF neighbours:
+
+R2 — Router ID 2.2.2.2 — FULL
+R3 — Router ID 3.3.3.3 — FULL
+R4 — Router ID 4.4.4.4 — FULL
+
+
+Summary
+-------
+
+R1 successfully formed FULL OSPF adjacencies with R2, R3, and R4.
+
+This confirms that:
+
+- Area 0 connectivity is operational.
+- R1 can communicate with all other OSPF routers.
+- R2 and R3 can function as ABRs.
+- R4 can provide the external/default route into the OSPF domain.
