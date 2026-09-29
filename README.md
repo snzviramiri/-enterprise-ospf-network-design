@@ -33,7 +33,7 @@ The network consists of:
 
 ### Topology
 
-![Enterprise OSPF Network Topology](Documentation/Network Topology.pdf)
+[View Network Topology PDF](Documentation/Network Topology.pdf)
 
                          ISP
                           |
