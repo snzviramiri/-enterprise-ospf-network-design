@@ -1,0 +1,53 @@
+SWITCH CONFIGURATIONS
+=====================
+
+
+SW1 CONFIGURATION
+-----------------
+
+hostname SW1
+
+interface GigabitEthernet0/1
+ no shutdown
+
+interface FastEthernet0/1
+ no shutdown
+
+interface FastEthernet0/2
+ no shutdown
+
+end
+
+
+SW2 CONFIGURATION
+-----------------
+
+hostname SW2
+
+interface GigabitEthernet0/1
+ no shutdown
+
+interface FastEthernet0/1
+ no shutdown
+
+interface FastEthernet0/2
+ no shutdown
+
+end
+
+
+SW3 CONFIGURATION
+-----------------
+
+hostname SW3
+
+interface GigabitEthernet0/1
+ no shutdown
+
+interface FastEthernet0/1
+ no shutdown
+
+interface FastEthernet0/2
+ no shutdown
+
+end

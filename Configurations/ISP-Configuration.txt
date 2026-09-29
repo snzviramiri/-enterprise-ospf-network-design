@@ -1,0 +1,20 @@
+ISP CONFIGURATION
+=================
+
+hostname ISP
+
+!
+! Connection to R4
+!
+
+interface GigabitEthernet0/0
+ ip address 203.0.113.2 255.255.255.0
+ no shutdown
+
+!
+! Return route to the enterprise networks
+!
+
+ip route 192.168.0.0 255.255.0.0 203.0.113.1
+
+end

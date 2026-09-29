@@ -1,0 +1,48 @@
+R3 CONFIGURATION
+================
+
+hostname R3
+
+!
+! Router-to-router interface
+!
+
+interface GigabitEthernet0/0
+ ip address 10.0.13.2 255.255.255.252
+ no shutdown
+
+!
+! LAN interface - Area 20
+!
+
+interface GigabitEthernet0/1
+ ip address 192.168.20.1 255.255.255.0
+ no shutdown
+
+!
+! LAN interface - Area 20
+!
+
+interface GigabitEthernet0/2
+ ip address 192.168.30.1 255.255.255.0
+ no shutdown
+
+!
+! Loopback
+!
+
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+
+!
+! OSPF
+!
+
+router ospf 1
+ router-id 3.3.3.3
+ network 10.0.13.0 0.0.0.3 area 0
+ network 192.168.20.0 0.0.0.255 area 20
+ network 192.168.30.0 0.0.0.255 area 20
+ network 3.3.3.3 0.0.0.0 area 20
+
+end
